@@ -24,5 +24,11 @@ class OracleTradePro:
                     
         except Exception as e:
             print(f"Connection Error: {e}")
-
+# --- THE LIVE TRIGGER ---
+if __name__ == "__main__":
+    print("--- JARVIS PROTOCOL: WAKING SENTINEL ---", flush=True)
+    # This initiates the actual audit
+    sentinel = OracleTradeSentinel("BMW Global") 
+    sentinel.run_compliance_audit()
+    print("--- SCAN COMPLETE ---", flush=True)
 # This turns your script into a 24/7 Watchdog.
